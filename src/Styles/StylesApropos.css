@@ -1,0 +1,140 @@
+/* General About Page Styles */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .about-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 50vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about-header-1 {
+    background-image: url('../Images/Banner of Pharmacy/Banner n1 About.jpeg'); /* Replace with your first banner image */
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.8);
+  }
+  
+  .about-header-2 {
+    background-image: url('../Images/Banner of Pharmacy/Banner of Pharmacy n2.webp'); /* Replace with your second banner image */
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.8);
+  }
+  
+  .about-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .about-header:hover {
+    filter: brightness(1);
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .about-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #005b7f;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .about-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .about-values {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+  }
+  
+  .values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .value-card {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .value-card h3 {
+    font-size: 1.5rem;
+    color: #005b7f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .value-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

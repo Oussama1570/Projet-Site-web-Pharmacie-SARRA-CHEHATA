@@ -1,0 +1,382 @@
+/* ======= Global Styles ======= */
+
+body {
+  margin-bottom: 40%;
+}
+
+main {
+  margin-top: 10%;
+}
+
+/* ======= Section Accueil ======= */
+
+.home-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  padding: 5%;
+  border-radius: 10px; /* Increased border radius */
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3c3c3c;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.home-call-to-action {
+  font-size: 18px;
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+.home-image {
+  max-width: 100%;
+  border-radius: 15px; /* Increased border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px; /* Adds margin to prevent touching the bottom */
+}
+
+.home-image:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ======= Section Galerie d'images ======= */
+
+.image-gallery {
+  margin-top: 60px;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Increased border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px; /* Adds margin to prevent images touching the content */
+  height: 300px; /* Set a fixed height for consistency */
+  cursor: pointer;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; /* Increased border radius */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ======= Section Bienvenue ======= */
+
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f9fa;
+  border-top: 2px solid #28a745;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  font-size: large !important;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image {
+    margin-top: 30px;
+  }
+
+  .image-card {
+    margin-bottom: 20px; /* Less margin on smaller screens */
+    height: 250px; /* Adjusted height for smaller screens */
+  }
+}
+
+/* ======= Section Services ======= */
+
+.services-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #320c77;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px; /* Increased border radius */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-title-Nos-Services {
+  color: #d12776;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f36bb !important;
+  margin-bottom: 15px;
+}
+
+.service-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ======= Section Call-To-Action ======= */
+
+.section-cta {
+  margin-top: 60px;
+  background-color: #5aa00a;
+  padding: 40px 20px;
+  border-radius: 15px; /* Increased border radius */
+  color: white;
+}
+
+.cta-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cta-text {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px; /* Increased border radius */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+  }
+}
+
+
+.button-services {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: rgba(18, 118, 184, 0.5);  /* Green background for the pharmacy theme */
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;  /* Rounded corners */
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button-services:hover {
+  background-color: rgba(6, 103, 167, 0.5);  /* Darker green on hover */
+  transform: translateY(-5px);  /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  /* Subtle shadow for hover effect */
+}
+
+.button-services .icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.button-services:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(2, 47, 77, 0.5);  /* Focus ring for accessibility */
+}
+
+
+/* Services Section Home */
+
+/* Services.css */
+.Home-services {
+  padding: 40px 0; /* Adjust padding as needed */
+  background-color: #f8f8f8; /* Example background color */
+  border-radius: 10px;
+}
+
+.container-services-home {
+  max-width: 1200px; /* Adjust max width as needed */
+  margin: 0 auto;
+  text-align: center; /* Center the content */
+}
+
+.services-section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333; /* Example color */
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Spacing between cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.service-card {
+  width: 250px; /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ddd; /* Example border */
+  border-radius: 15px; /* Increased border radius */
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.service-icon {
+  font-size: 3em; /* Adjust icon size */
+  margin-bottom: 10px;
+  color: #007bff; /* Example icon color */
+}
+
+/* If using image icons: */
+.service-icon img {
+  width: 3em;  /* Or a specific width */
+  height: 3em; /* Or a specific height */
+}
+
+.service-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+  .service-card {
+    width: 90%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}

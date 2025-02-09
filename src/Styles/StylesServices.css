@@ -1,0 +1,149 @@
+/** Services-list Section **/
+
+.services-section {
+  padding: 80px 20px;
+  background-color: #f4f7f9;
+  text-align: center;
+  border-top: 4px solid #3d66bd;
+  border-radius: 10px;
+}
+
+.services-container {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #3d66bd;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.service-list {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 5%;
+}
+
+/** See our Products Button **/
+
+
+.button {
+  background: linear-gradient(45deg, #0874b3, #09ad11);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #2e3594, #08cf4b);
+}
+
+/** Cards Services Section **/
+
+.service-cards-row {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.service-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 60px;
+  color: #3d66bd;
+  margin-bottom: 20px;
+}
+
+/* Adjust Learn More button style and center it */
+.learn-more-services-btn {
+  margin-top: 20px;
+  padding: 12px 25px; /* Adjusted padding for better size consistency */
+  background-color: #3d66bd;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Make sure it's inline-block for better centering */
+  margin-left: auto;
+  margin-right: auto; /* Center the button horizontally */
+  text-align: center;
+}
+
+.learn-more-services-btn:hover {
+  background-color: #0c7baf;
+}
+
+.modal-header {
+  background-color: #0c7baf;
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-body {
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-footer button {
+  background-color: #0c7baf;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #3cd8d0;
+}
+
+@media (max-width: 768px) {
+  .service-cards-row {
+    flex-direction: column;
+  }
+
+  .service-card-col {
+    max-width: 100%;
+  }
+}

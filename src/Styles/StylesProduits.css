@@ -1,0 +1,241 @@
+/* StylesProduits.css */
+
+/* Container and overall layout */
+.container {
+  margin-top: 30px;
+}
+
+.products-title {
+  margin-left: 50%;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #070c53 !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 50%;
+}
+
+/* Container for the Filter Dropdown */
+.filter-dropdown {
+  position: relative;
+  width: 100%; /* Ensure the dropdown takes up the full width of the button */
+  margin-bottom: 15px;
+}
+
+/* Dropdown (Select) Button */
+.filter-dropdown .dropdown-toggle {
+  display: flex;
+  justify-content: center; /* Horizontally center the button text */
+  align-items: center;     /* Vertically center the button text */
+  padding: 12px 20px;      /* Same padding as the button */
+  background-color: #4CAF50; /* Medicine green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; /* Full width of its container */
+}
+
+/* Ensure the dropdown items align properly */
+.filter-dropdown .dropdown-menu {
+  width: 100%; /* Make dropdown as wide as the button */
+  text-align: center; /* Center text inside dropdown items */
+}
+
+/* Hover effect for the dropdown button */
+.filter-dropdown .dropdown-toggle:hover {
+  background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Price and Category Buttons */
+.filter-dropdown button {
+  display: flex;
+  justify-content: center; /* Horizontally center the button content */
+  align-items: center;     /* Vertically center the button content */
+  background-color: #7de680 !important; /* Medicine green color (adjust if needed) */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px; /* Adjust padding for a consistent look */
+  width: 100%; /* Ensure the button fills its container */
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.filter-dropdown button:hover {
+  background-color: #0d6411 !important; /* Darker shade of green for hover effect */
+}
+
+/* Filter Sidebar */
+.filter-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky !important;
+}
+
+.filter-section h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.filter-dropdown {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Clear Filters Button */
+.button-clear-filters {
+  width: 100%; /* Ensure the button fills its container */
+  padding: 12px 20px; /* Same padding as filter buttons */
+  font-size: 1rem;
+  background-color: #094d96 !important; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.clear-filters button:hover {
+  background-color: #05172b !important; /* Darker blue on hover */
+}
+
+/* Product Cards Section */
+.products-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Moon Loader */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background to avoid transparency issues */
+}
+
+/* Product Cards Section */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly between items */
+    overflow: hidden;
+    width: 180px;
+}
+
+/* Product Name */
+.product-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 200px; /* Set fixed height for product image */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Modal Styles */
+.modal-dialog {
+  max-width: 800px; /* Increase the width for a better view */
+  margin: 30px auto; /* Center the modal */
+}
+
+.modal-content {
+  padding: 20px; /* Add some padding to the modal content */
+}
+
+.modal-body {
+  max-height: 80vh; /* Allow the modal body to grow but limit to 80% of the viewport height */
+  overflow-y: auto; /* Ensure scrolling if the content overflows */
+}
+
+.product-image {
+  width: 100%;
+  height: 250px; /* Ensure the image scales to fit without distortion */
+  object-fit: contain; /* Ensure the image is contained within its area */
+}
+
+.modal-header, .modal-footer {
+  border: none; /* Remove borders for a cleaner look */
+}
+
+.modal-title {
+  font-size: 1.5rem; /* Increase modal title size */
+}
+
+.modal-body p {
+  font-size: 1rem; /* Set font size for text content */
+}
+
+/* Product Category */
+.product-category {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 15px; /* Space between price and button */
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: #165ca7 !important;
+    border: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Push the button to the bottom */
+    
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-5px);
+}

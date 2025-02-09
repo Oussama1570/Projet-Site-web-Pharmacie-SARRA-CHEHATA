@@ -1,0 +1,129 @@
+.custom-navbar {
+    background: linear-gradient(to right, #58b6ae, #1e2d84); /* Richer green shades */
+    padding: 12px 25px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Brand styling with an icon */
+  /* Brand Styling (Text & Icon) */
+/* Brand Styling (Text & Icon) */
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white !important;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Logo Icon Styling */
+.brand-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #0b6cbb; /* Default yellow */
+  transition: transform 0.6s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* Hover Effect - Neon Glow & Bounce */
+.brand:hover {
+  color: #0b6cbb;
+  text-shadow: 0 0 10px #0b6cbb(255, 223, 0, 0.8), 0 0 20px #0b6cbb(255, 223, 0, 0.6);
+  transform: translateY(-3px) scale(1.05); /* Slight lift and zoom */
+  animation: bounce 0.5s ease-in-out;
+}
+
+/* Rotate and change icon color on hover */
+/* Brand Styling (Text & Icon) */
+/* Brand Styling (Text & Icon) */
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden; /* Ensures it stays inside the navbar */
+}
+
+/* Logo Icon Styling */
+.brand-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #0b6cbb; /* Default yellow */
+  transition: transform 0.6s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* Hover Effect - Shimmering Gradient & Rotation */
+.brand:hover {
+  background: linear-gradient(90deg, #290883, #290883, #290883);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 1.5s infinite alternate;
+  text-shadow: 0px 0px 15px #290883(255, 215, 0, 0.8);
+}
+
+/* Rotate & Glow Effect for Icon */
+.brand:hover .brand-icon {
+  transform: rotate(360deg);
+  color: #290883;
+  filter: drop-shadow(0px 0px 10px #290883(255, 215, 0, 1));
+}
+
+/* Shimmering Animation */
+@keyframes shimmer {
+  0% { opacity: 1; text-shadow: 0px 0px 5px rgba(253, 255, 255, 0.5); }
+  100% { opacity: 0.8; text-shadow: 0px 0px 15px rgba(253, 255, 255, 0.5); }
+}
+
+
+/* Shimmering Animation */
+@keyframes shimmer {
+  0% { opacity: 1; text-shadow: 0px 0px 5px rgba(253, 255, 255, 0.5); }
+  100% { opacity: 0.8; text-shadow: 0px 0px 15px rgba(253, 255, 255, 0.5); }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Active Link */
+  .navbar-nav .nav-link.active {
+    color: #F1C40F !important; /* Yellow highlight */
+    font-weight: bold;
+  }
+  
+ 
